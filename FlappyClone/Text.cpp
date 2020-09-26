@@ -10,7 +10,16 @@ Text::Text(SDL_Renderer* renderer,
 {
 	_text_texture = loadFont(renderer, font_path, font_size, message_text, color);
 	SDL_QueryTexture(_text_texture, nullptr, nullptr, &_text_rect.w, &_text_rect.h); //Generates width and height based on the font size and text lenght
+}
 
+void Text::changeText(SDL_Renderer* renderer,
+	const std::string& font_path,
+	int font_size,
+	const std::string& message_text,
+	const SDL_Color& color)
+{
+	_text_texture = loadFont(renderer, font_path, font_size, message_text, color);
+	SDL_QueryTexture(_text_texture, nullptr, nullptr, &_text_rect.w, &_text_rect.h); //Generates width and height based on the font size and text lenght
 }
 
 void Text::display(int x, int y, SDL_Renderer* renderer) const

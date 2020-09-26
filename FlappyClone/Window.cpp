@@ -62,9 +62,9 @@ bool Window::init()
 	return true;
 }
 
-void Window::pollEvents(SDL_Event& event)
+void Window::pollEvents(SDL_Event& event, float rs)
 {
-	//std::cout << event.motion.x << " " << event.motion.y << "\n";
+	//std::cout << event.motion.x << " " << event.motion.y <<"   rs:" << rs << "\n";
 	switch (event.type)
 	{
 	case SDL_QUIT:
@@ -103,10 +103,23 @@ void Window::pollEvents(SDL_Event& event)
 				_resSet = 4.0f;
 				_openedSettings = false;
 				_closed = true;
-
 			}
 		}
-
+		if (_endMenu)
+		{
+			if (event.motion.y > 224 * rs && event.motion.y < 294 * rs)
+			{
+				if (event.motion.x > 328 * rs && event.motion.x < 397 * rs)
+				{
+					this->_closed = true;
+					break;
+				}
+				else if (event.motion.x > 241 * rs && event.motion.x < 311 * rs)
+				{
+					_restart = true;
+				}
+			}
+		}
 	case SDL_KEYDOWN:
 		switch (event.key.keysym.sym)
 		{
