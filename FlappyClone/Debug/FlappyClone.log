@@ -1,0 +1,9 @@
+﻿  main.cpp
+C:\C++ SDL\FlappyClone\FlappyClone\Window.h(36,23): warning C4244:  'return': conversion from 'float' to 'int', possible loss of data
+C:\C++ SDL\FlappyClone\FlappyClone\Player.h(42,25): warning C4244:  '+=': conversion from 'float' to 'int', possible loss of data
+C:\C++ SDL\FlappyClone\FlappyClone\main.cpp(103,25): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\C++ SDL\FlappyClone\FlappyClone\main.cpp(107,45): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\C++ SDL\FlappyClone\FlappyClone\main.cpp(114,19): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\C++ SDL\FlappyClone\FlappyClone\main.cpp(127,19): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\C++ SDL\FlappyClone\FlappyClone\main.cpp(131,20): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+  FlappyClone.vcxproj -> C:\C++ SDL\FlappyClone\Debug\FlappyClone.exe
