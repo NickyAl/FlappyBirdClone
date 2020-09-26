@@ -1,34 +1,9 @@
-﻿  Object.cpp
-  Obstacle.cpp
-C:\C++ SDL\FlappyClone\FlappyClone\Window.h(40,23): warning C4244:  'return': conversion from 'float' to 'int', possible loss of data
-C:\C++ SDL\FlappyClone\FlappyClone\Window.h(40,23): warning C4244:  'return': conversion from 'float' to 'int', possible loss of data
-C:\C++ SDL\FlappyClone\FlappyClone\Obstacle.cpp(29,12): warning C4244:  'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\C++ SDL\FlappyClone\FlappyClone\Obstacle.cpp(31,21): warning C4244:  '*=': conversion from 'float' to 'int', possible loss of data
-C:\C++ SDL\FlappyClone\FlappyClone\Obstacle.cpp(32,12): warning C4244:  'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\C++ SDL\FlappyClone\FlappyClone\Obstacle.cpp(34,18): warning C4244:  '*=': conversion from 'float' to 'int', possible loss of data
-C:\C++ SDL\FlappyClone\FlappyClone\Obstacle.cpp(37,45): warning C4244:  '=': conversion from 'float' to 'int', possible loss of data
-C:\C++ SDL\FlappyClone\FlappyClone\Obstacle.cpp(42,25): warning C4244:  '-=': conversion from 'float' to 'int', possible loss of data
-C:\C++ SDL\FlappyClone\FlappyClone\Obstacle.cpp(43,25): warning C4244:  '-=': conversion from 'float' to 'int', possible loss of data
-C:\C++ SDL\FlappyClone\FlappyClone\Obstacle.cpp(47,23): warning C4244:  '=': conversion from 'float' to 'int', possible loss of data
-  Player.cpp
-C:\C++ SDL\FlappyClone\FlappyClone\Obstacle.cpp(48,23): warning C4244:  '=': conversion from 'float' to 'int', possible loss of data
+﻿  main.cpp
 C:\C++ SDL\FlappyClone\FlappyClone\Window.h(40,23): warning C4244:  'return': conversion from 'float' to 'int', possible loss of data
 C:\C++ SDL\FlappyClone\FlappyClone\Player.h(24,25): warning C4244:  '+=': conversion from 'float' to 'int', possible loss of data
-  Rect.cpp
-C:\C++ SDL\FlappyClone\FlappyClone\Player.cpp(44,24): warning C4244:  '-=': conversion from 'float' to 'int', possible loss of data
-C:\C++ SDL\FlappyClone\FlappyClone\Window.h(40,23): warning C4244:  'return': conversion from 'float' to 'int', possible loss of data
-  Text.cpp
-C:\C++ SDL\FlappyClone\FlappyClone\Rect.cpp(57,3): warning C4065:  switch statement contains 'default' but no 'case' labels
-  Window.cpp
-C:\C++ SDL\FlappyClone\FlappyClone\Window.h(40,23): warning C4244:  'return': conversion from 'float' to 'int', possible loss of data
-  main.cpp
-C:\C++ SDL\FlappyClone\FlappyClone\Window.h(40,23): warning C4244:  'return': conversion from 'float' to 'int', possible loss of data
-C:\C++ SDL\FlappyClone\FlappyClone\Window.h(40,23): warning C4244:  'return': conversion from 'float' to 'int', possible loss of data
-C:\C++ SDL\FlappyClone\FlappyClone\Player.h(24,25): warning C4244:  '+=': conversion from 'float' to 'int', possible loss of data
-C:\C++ SDL\FlappyClone\FlappyClone\main.cpp(102,25): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
-C:\C++ SDL\FlappyClone\FlappyClone\main.cpp(106,32): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
-C:\C++ SDL\FlappyClone\FlappyClone\main.cpp(112,19): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
-C:\C++ SDL\FlappyClone\FlappyClone\main.cpp(142,19): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
-  Generating Code...
-C:\C++ SDL\FlappyClone\FlappyClone\main.cpp(146,20): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\C++ SDL\FlappyClone\FlappyClone\main.cpp(104,25): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\C++ SDL\FlappyClone\FlappyClone\main.cpp(108,32): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\C++ SDL\FlappyClone\FlappyClone\main.cpp(129,19): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\C++ SDL\FlappyClone\FlappyClone\main.cpp(159,19): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\C++ SDL\FlappyClone\FlappyClone\main.cpp(163,20): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
   FlappyClone.vcxproj -> C:\C++ SDL\FlappyClone\Debug\FlappyClone.exe

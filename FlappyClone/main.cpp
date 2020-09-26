@@ -71,6 +71,8 @@ int main(int argc, char** argv)
 
 	Window window("FlappyClone", 640 * rs, 360 * rs);
 	Object background(640 * rs, 360 * rs, 0, 0, 100, 200, 255, 255);
+	Object clouds1(633 * rs, 360 * rs, 0, 0, "Resources/clouds.png");
+	Object clouds2(633 * rs, 360 * rs, 633 * rs, 0, "Resources/clouds2.png");
 
 	Player player1;
 	player1.setBody(18 * rs, 12 * rs, 80 * rs, 0, "Resources/DirpyBird.png");
@@ -105,7 +107,22 @@ int main(int argc, char** argv)
 		{
 			pollEvents(window, player1, rs);
 		}
+
 		background.draw();
+		clouds1.draw();
+		clouds2.draw();
+		{
+			clouds1._x -= 1 * rs;
+			clouds2._x -= 1 * rs;
+			if (clouds1._x < -633 * rs)
+			{
+				clouds1._x = 633 * rs;
+			}
+			if (clouds2._x < -633 * rs)
+			{
+				clouds2._x = 633 * rs;
+			}
+		}
 
 		player1.draw();
 		obstacle.draw();
