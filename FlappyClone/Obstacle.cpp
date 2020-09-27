@@ -30,7 +30,7 @@ void Obstacle::setRandomness(float rs)
 	_spacebetween = ((rand() * rand()) % 40) + 60;
 	_spacebetween *= rs;
 	srand(time(NULL));
-	int lowerTubeY = (rand() % 160) + 100;
+	int lowerTubeY = ((rand() * rand()) % 160) + 100;
 	lowerTubeY *= rs;
 
 	_lowerTube._y = lowerTubeY;

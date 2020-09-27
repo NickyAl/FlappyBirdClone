@@ -85,9 +85,14 @@ int main(int argc, char** argv)
 
 	bool gameover = false;
 
+	int oldScore = 0;
+
 	//Rect debug(71 * rs, 70 * rs, 241 * rs, 224 * rs, 255, 0, 0, 255);
 
 	Text text(Window::renderer, "Resources/arial.ttf", 30, scoreChar, { 30, 10, 10, 255 });
+	
+	unsigned short int oneTimeOptimization = 0;
+	
 	while (!window.isClosed())
 	{
 		frameStart = SDL_GetTicks();
@@ -131,13 +136,22 @@ int main(int argc, char** argv)
 		if (!gameover)
 		{
 			tools::intToScore(scoreInt, scoreChar);
-			text.changeText(Window::renderer, "Resources/arial.ttf", 30, scoreChar, { 30, 10, 10, 255 });
+			if (scoreInt != oldScore)
+			{
+				text.changeText(Window::renderer, "Resources/arial.ttf", 30, scoreChar, { 30, 10, 10, 255 });
+				oldScore = scoreInt;
+			}
 			text.display(20, 20, Window::renderer);
 		}
 		else
 		{
 			window.setEndMenu(true);
-			text.changeText(Window::renderer, "Resources/arial.ttf", 24 * rs, scoreChar, { 0, 0, 0, 255 });
+			if (oneTimeOptimization == 0)
+			{
+				text.changeText(Window::renderer, "Resources/arial.ttf", 24 * rs, scoreChar, { 0, 0, 0, 255 });
+				oneTimeOptimization++;
+			}
+			
 			overScreen.draw();
 			text.display(330 * rs, 157 * rs, Window::renderer);
 
@@ -149,6 +163,7 @@ int main(int argc, char** argv)
 				scoreChar[2] = '\0';
 				scoreChar[3] = '\0';
 				scoreInt = 0;
+				oneTimeOptimization = 0;
 				gameover = false;
 				window.setRestart(false);
 			}
